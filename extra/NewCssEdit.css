@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+input[type=text] {
+    width: 300px;
+    height: 100px;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background: #ffffff
+}    
+
+.top-bar{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(66, 190, 161); 
+    border-bottom: 2px solid;
+    z-index: 100;
+}
+.profilepic{
+    width: 75px;
+    border-radius: 45px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+}
+.navi-bar{
+    width: 210px;
+    height: 100%;
+    background: rgb(12, 90, 72);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 10px 20px;
+    border-right: 2px solid;
+    z-index: 1;
+
+}
+.logopic{
+    width: 140px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.option{
+    list-style: none;
+    position: relative;
+    margin-top: 120px;
+
+}
+.option2{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+}
+.Menu:hover, .Social:hover, .Market:hover, .Service:hover,
+.Settings:hover, .Signout:hover {
+    background-color: #0b9d71;
+  }
+.option li,
+.option2 li{
+    padding: 20px 0;
+}
+
+.option li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.option2 li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.option li a i,
+.option2 li a i {
+    font-size: 25px;
+    margin-right: 15px;
+}
+.content {
+    width: 100%;
+    height: 800px;
+    margin-left:210px;
+}
+#maincontent {
+    width: 80%;
+    background-color: #f0f3dd;
+    height: 800px;
+    display:flex;
+    flex-direction: column;
+    float:left;
+}
+.container3{
+    width: 800px;
+    height: 564px;
+    display: grid;
+    place-items: center;
+}
+.boxinabox{
+    display: flex;   
+}
+
+.buttons{
+    display: flex;
+    width: 252px;
+    flex-direction: row;
+    place-content: center;
+}
+    .buttons>button{
+    text-align: center;
+    cursor: pointer;
+}
+.rectangleaboutusbox {
+    width: 580px;
+    height: 700px;
+    background-color: green;
+    justify-items: center;
+}
+.triplerect{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+column-gap: 30px;
+}
+.triplerectinside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.vl {
+    border-left: 2px solid black;
+    height: 760px;
+  }
+.rectanglesmallboxes {
+    width: 600px;
+    height: 200px;
+    background-color: green;
+    justify-items: center;
+    
+}
+.uploadimage{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+

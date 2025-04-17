@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    height: 135px;
+    background: rgb(12, 90, 72);
+    border-bottom: 2px solid;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+.profilepic{
+    width: 75px;
+    border-radius: 45px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+}
+
+.top-bar{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(66, 190, 161); 
+    border-bottom: 2px solid;
+    z-index: 100;
+}
+
+.title {
+    margin-left: 540px;
+    display: inline;
+    text-align: center;
+}
+
+.logo {
+    width: 271px;
+    height: 116px;
+    flex-shrink: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: inline
+}
+
+.navi-bar{
+    width: 210px;
+    height: 100%;
+    background: rgb(12, 90, 72);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    border-right: 2px solid;
+    z-index: 1;
+}
+.logopic{
+    width: 140px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.option{
+    list-style: none;
+    position: relative;
+    margin-top: 80px;
+
+
+}
+.option2{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+}
+.option .MenuButton,
+.option2 .MenuButton{
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.option .MenuButton::after,
+.option2 .MenuButton::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.option .MenuButton:hover::after,
+.option2 .MenuButton:hover::after{
+    transform: scaleX(1);
+}
+  
+.option li,
+.option2 li{
+    padding: 20px 0;
+}
+
+.option li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.option2 li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.option li a i,
+.option2 li a i {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 10%;
+    margin-left: 22%;
+}
+
+
+.flex-container-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 260px;
+    margin-top: 120px;
+}
+
+.flex-container-tab {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 90px;
+    }
+
+.flex-container-table {
+    display: flex;
+    margin-left: 200px;
+    }
+    
+.flex-container > div {
+    width:100%;
+    padding: 10px;
+    }
+
+.tab {
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 9px;
+}
+
+#schedule-tab-current {
+    background: rgb(0, 255, 123);
+    border: 1px solid #000000;
+
+}
+
+#schedule-tab {
+    background: rgb(156, 255, 204);
+    border: 1px solid #000000;
+
+}
+
+#schedule-tab:hover {
+    background: rgb(0, 149, 72);
+    border: 1px solid #000000;
+}
+
+#inventory-tab {
+    background: rgb(156, 255, 204);
+    border: 1px solid #000000;
+}
+
+#inventory-tab-current {
+    background: rgb(0, 255, 123);
+    border: 1px solid #000000;
+}
+
+#inventory-tab:hover {
+    background: rgb(0, 149, 72);
+    border: 1px solid #000000;
+}
+
+
+#inventory-view {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    }
+    #inventory-view td, #inventory-view th {
+        border: 1px solid #ddd;
+        padding: 25px;
+    }
+    #inventory-view tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    #inventory-view tr:hover {
+        background-color: #ddd;
+    }
+    #inventory-view th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color:honeydew;
+    }
+
+#schedule-view {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    }
+    #schedule-view td, #schedule-view th {
+        border: 1px solid #ddd;
+        padding: 25px;
+    }
+    #schedule-view tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    #schedule-view tr:hover {
+        background-color: #ddd;
+    }
+    #schedule-view th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color:honeydew;
+    }
+    
+.add-sched {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 260px;
+    background-color: aquamarine;
+    border: 2px solid darkgreen;
+    border-radius: 8px;
+    font-size: large;
+    float: left;
+}
+
+.add-sched-2 {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: aquamarine;
+    border: 2px solid darkgreen;
+    border-radius: 8px;
+    font-size: large;
+    float: left;
+}
+
+.change-sched-button {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: aquamarine;
+    border: 2px solid darkgreen;
+    border-radius: 8px;
+    font-size: 16px;
+    float: left;
+}
+
+.table-title {
+    margin-left: 220px;
+    padding: 15px;
+}
+
+.temp-not{
+    color: red;
+    margin: 20px;
+}
